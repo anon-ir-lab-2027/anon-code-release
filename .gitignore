@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+
+# Data: 只保留小样例，完整公开数据用 scripts/download_data.sh 下载
+data/*.json
+!data/sample/
+!data/sample/**
+
+# Large outputs
+outputs/
+*.pkl
+exp/*.old*
+exp/*.old2*
+exp/*.old3*
+
+# Cache / logs
+.DS_Store
+*.log
+
+# Environment
+.env
+.env.*
+!.env.example
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+*.orig
